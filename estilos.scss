@@ -1,0 +1,27 @@
+$color1: #FFA71A;
+$color2: #090601;
+$color3: #EDEDED;
+
+
+// Definición de un mixin para botones
+
+@mixin button-styles($padding, $border-radius, $bg-color) {
+    padding: $padding;
+    border-radius: $border-radius;
+    color: white;
+    background-color: $bg-color;
+}
+
+// Uso del mixin en clases
+// .primary-button {
+    // @include button-styles(10px 20px, 5px, blue);
+//}
+//.secondary-button {
+  //  @include button-styles(10px 20px, 5px, gray);
+//} 
+
+
+@import 'contactos';
+@import 'hamburguesa';
+@import 'sucursal';
+@import 'tapasybebidas';
