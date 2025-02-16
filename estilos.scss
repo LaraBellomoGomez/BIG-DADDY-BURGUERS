@@ -1,27 +1,27 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+
 $color1: #FFA71A;
 $color2: #090601;
 $color3: #EDEDED;
+$color4: #ffa71a81; 
 
-
-// Definición de un mixin para botones
-
-@mixin button-styles($padding, $border-radius, $bg-color) {
-    padding: $padding;
-    border-radius: $border-radius;
-    color: white;
-    background-color: $bg-color;
-}
-
-// Uso del mixin en clases
-// .primary-button {
-    // @include button-styles(10px 20px, 5px, blue);
-//}
-//.secondary-button {
-  //  @include button-styles(10px 20px, 5px, gray);
-//} 
 
 
 @import 'contactos';
 @import 'hamburguesa';
 @import 'sucursal';
 @import 'tapasybebidas';
+@import 'inicio';
+
+
+// inicio de Media Queries
+@media screen and (min-width: 480px) {
+    .comida{
+        grid-template-columns: 1fr 1fr;   
+        grid-template-rows: 1fr; 
+    }
+}
