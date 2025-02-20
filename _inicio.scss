@@ -1,52 +1,23 @@
-.comida{
+.galeria {
     width: 100%;
     height: 600px;
-    background: $color1;;
+    background-color: Orange;
     display: grid;
     grid-template-columns: 1fr;
-    padding: 20px;
-    grid-gap: 5px;
-    grid-template-rows: repeat(2, 250px)
+    grid-template-rows: 1fr;
 }
 
-.item{
+.item {
     background-color: #333;
     border: 3px solid #000;
     background-size: cover;
     background-position: center;
 }
-    
-.item1{
-    background-image: url(./MULTIMEDIA/HAMBURGUESAS/HAMBURGUESA\ 1.jpg)
-}
-.item2{
-    background-image: url(./MULTIMEDIA/TAPAS/TAPAS\ 4.jpg)
+
+.item1 {
+    background-image: url(./MULTIMEDIA/HAMBURGUESAS/HAMBURGUESA\ 2.jpg)
 }
 
-
-// inicio de boton
-
-.boton {
-    display: inline-block;
-    background-color: $color1;
-    color: $color2;
-    padding: 5px 10px;
-    text-decoration: none; /* Elimina el subrayado del enlace */
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    top: 70%;
-}
-
-.boton:hover {
-    background-color: $color4;
-}
-
-
-// inicio de Media Queries
-@media screen and (min-width: 480px) {
-    .comida{
-        grid-template-columns: 1fr 1fr;   
-        grid-template-rows: 1fr; 
-    }
+.item2 {
+    background-image: url(./MULTIMEDIA/TAPAS/TAPAS\ 2.jpg)
 }
