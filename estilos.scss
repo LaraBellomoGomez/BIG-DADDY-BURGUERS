@@ -19,24 +19,3 @@ $color4: #ffa71a81;
 @import 'inicio';
 
 
-/* Media query para tabletas */
-@media (min-width: 480px) {
-    body {
-        font-size: 18px;
-        padding: 20px;
-    }
-    .galeria{
-        grid-template-columns: 2fr;
-    }
-}
-
-/* Media query para computadoras de escritorio */
-@media (min-width: 1024px) {
-    body {
-        font-size: 20px;
-        padding: 30px;
-    }
-    .galeria{
-        grid-template-columns: 2fr;
-    }
-}
