@@ -1,7 +1,8 @@
 $color1: #f9cd86;
 $color2: #090601;
 $color3: #EDEDED;
-$color4: #e59617; 
+$color4: #e59617;
+$color5: #fbecd4;
 
 
 // FUENTES INICIO
@@ -119,11 +120,16 @@ $color4: #e59617;
 
 }
 
+body{
+    background-color: $color3;
+}
+
 
 //NAVEGADOR 
-.navbar{
+.navbar {
     padding: 10px;
 }
+
 .navbar a {
     font-weight: 600;
     font-size: 18px;
@@ -140,23 +146,23 @@ $color4: #e59617;
     z-index: 2;
 }
 
-.carousel-caption h5{
-font-size: 70px;
-font-weight: 600;
-text-transform: uppercase; 
-margin-top: 25px;
+.carousel-caption h5 {
+    font-size: 70px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 25px;
 }
 
 .carousel caption p {
-width: 60%;
-margin: 10px auto;
-font-size: 18px;
+    width: 60%;
+    margin: 10px auto;
+    font-size: 18px;
 }
 
 .carousel-inner::before {
-    content:'';
+    content: '';
     position: absolute;
-    width:100%;
+    width: 100%;
     height: 100%;
     top: 0%;
     left: 0%;
@@ -173,24 +179,25 @@ font-size: 18px;
 }
 
 .box-icons h3 {
-font-size: 20px;
-font-weight: 800;
-padding-top: 20px;
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 20px;
 }
 
 // PRODUCTOS
-.product{
+.product {
     padding: 10px 0;
 
 }
 
-.banner{
+// BANNER
+.banner {
     padding: 80px 0;
     margin-bottom: 60px;
     background-color: $color2;
 }
 
-.banner h2{
+.banner h2 {
     padding: 40px;
     font-size: 40px;
     text-transform: uppercase;
@@ -198,7 +205,7 @@ padding-top: 20px;
     color: $color4;
 }
 
-.banner p{
+.banner p {
     color: $color3
 }
 
@@ -206,10 +213,63 @@ padding-top: 20px;
     width: 300px;
 }
 
-.btn-primary{
+// BOTONES
+
+.btn-primary {
     background-color: $color1;
     color: $color2;
     font-weight: 500;
     border: 2px solid $color2;
+}
 
+//FORMULARIO
+
+.form {
+    background-color: $color3;
+}
+
+
+//FOTTER
+
+.mb-4 a{
+    color: $color2;
+}
+
+
+// MEDIA
+
+@media (max-width: 767px) {
+    .carousel-item {
+        min-height: 500px;
+    }
+
+    .carousel-item img {
+        height: 500px;
+    }
+
+    .carousel-caption {
+        bottom: 50px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    .carousel-caption p {
+        font-size: 50px;
+        width: 100%;
+    }
+
+    .services {
+        padding: 30px 0;
+    }
+
+    .product {
+        padding: 30px 0 0 0;
+    }
+
+    .banner {
+        margin-bottom: 30px;
+    }
 }

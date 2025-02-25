@@ -90,6 +90,10 @@
   font-style: italic;
 }
 
+body {
+  background-color: #EDEDED;
+}
+
 .navbar {
   padding: 10px;
 }
@@ -174,4 +178,41 @@
   color: #090601;
   font-weight: 500;
   border: 2px solid #090601;
+}
+
+.form {
+  background-color: #EDEDED;
+}
+
+.mb-4 a {
+  color: #090601;
+}
+
+@media (max-width: 767px) {
+  .carousel-item {
+    min-height: 500px;
+  }
+  .carousel-item img {
+    height: 500px;
+  }
+  .carousel-caption {
+    bottom: 50px;
+  }
+  .carousel-caption h5 {
+    font-size: 50px;
+    margin-top: 0;
+  }
+  .carousel-caption p {
+    font-size: 50px;
+    width: 100%;
+  }
+  .services {
+    padding: 30px 0;
+  }
+  .product {
+    padding: 30px 0 0 0;
+  }
+  .banner {
+    margin-bottom: 30px;
+  }
 }/*# sourceMappingURL=estilos.css.map */
