@@ -1,21 +1,215 @@
+$color1: #f9cd86;
+$color2: #090601;
+$color3: #EDEDED;
+$color4: #e59617; 
+
+
+// FUENTES INICIO
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+    .poppins-thin {
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-style: normal;
+    }
+
+    .poppins-extralight {
+        font-family: "Poppins", serif;
+        font-weight: 200;
+        font-style: normal;
+    }
+
+    .poppins-light {
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    .poppins-regular {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .poppins-medium {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    .poppins-semibold {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .poppins-bold {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    .poppins-extrabold {
+        font-family: "Poppins", serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+
+    .poppins-black {
+        font-family: "Poppins", serif;
+        font-weight: 900;
+        font-style: normal;
+    }
+
+    .poppins-thin-italic {
+        font-family: "Poppins", serif;
+        font-weight: 100;
+        font-style: italic;
+    }
+
+    .poppins-extralight-italic {
+        font-family: "Poppins", serif;
+        font-weight: 200;
+        font-style: italic;
+    }
+
+    .poppins-light-italic {
+        font-family: "Poppins", serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+
+    .poppins-regular-italic {
+        font-family: "Poppins", serif;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .poppins-medium-italic {
+        font-family: "Poppins", serif;
+        font-weight: 500;
+        font-style: italic;
+    }
+
+    .poppins-semibold-italic {
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        font-style: italic;
+    }
+
+    .poppins-bold-italic {
+        font-family: "Poppins", serif;
+        font-weight: 700;
+        font-style: italic;
+    }
+
+    .poppins-extrabold-italic {
+        font-family: "Poppins", serif;
+        font-weight: 800;
+        font-style: italic;
+    }
+
+    .poppins-black-italic {
+        font-family: "Poppins", serif;
+        font-weight: 900;
+        font-style: italic;
+    }
+
 }
 
 
-$color1: #FFA71A;
-$color2: #090601;
-$color3: #EDEDED;
-$color4: #ffa71a81;
+//NAVEGADOR 
+.navbar{
+    padding: 10px;
+}
+.navbar a {
+    font-weight: 600;
+    font-size: 18px;
+}
 
+//CAROUSEL
 
+.carousel-item {
+    min-height: 400px;
+}
 
-@import 'contactos';
-@import 'hamburguesa';
-@import 'sucursal';
-@import 'tapasybebidas';
-@import 'inicio';
+.carousel-caption {
+    bottom: 220px;
+    z-index: 2;
+}
 
+.carousel-caption h5{
+font-size: 70px;
+font-weight: 600;
+text-transform: uppercase; 
+margin-top: 25px;
+}
 
+.carousel caption p {
+width: 60%;
+margin: 10px auto;
+font-size: 18px;
+}
+
+.carousel-inner::before {
+    content:'';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+
+}
+
+//SERVICIOS ESPECIALES
+
+.box-icons i {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+.box-icons h3 {
+font-size: 20px;
+font-weight: 800;
+padding-top: 20px;
+}
+
+// PRODUCTOS
+.product{
+    padding: 10px 0;
+
+}
+
+.banner{
+    padding: 80px 0;
+    margin-bottom: 60px;
+    background-color: $color2;
+}
+
+.banner h2{
+    padding: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: $color4;
+}
+
+.banner p{
+    color: $color3
+}
+
+.banner img {
+    width: 300px;
+}
+
+.btn-primary{
+    background-color: $color1;
+    color: $color2;
+    font-weight: 500;
+    border: 2px solid $color2;
+
+}

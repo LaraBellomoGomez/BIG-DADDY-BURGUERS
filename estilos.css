@@ -1,77 +1,177 @@
-* {
-  margin: 0%;
-  padding: 0%;
-  box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* .poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+* .poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+* .poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+* .poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+* .poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+* .poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+* .poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+* .poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+* .poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+* .poppins-thin-italic {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+* .poppins-extralight-italic {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+* .poppins-light-italic {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+* .poppins-regular-italic {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+* .poppins-medium-italic {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+* .poppins-semibold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+* .poppins-bold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+* .poppins-extrabold-italic {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+* .poppins-black-italic {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
-body {
+.navbar {
+  padding: 10px;
+}
+
+.navbar a {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.carousel-item {
+  min-height: 400px;
+}
+
+.carousel-caption {
+  bottom: 220px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 70px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+
+.carousel caption p {
+  width: 60%;
+  margin: 10px auto;
+  font-size: 18px;
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.box-icons i {
+  font-size: 40px;
+  padding-top: 20px;
+}
+
+.box-icons h3 {
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 20px;
+}
+
+.product {
+  padding: 10px 0;
+}
+
+.banner {
+  padding: 80px 0;
+  margin-bottom: 60px;
   background-color: #090601;
 }
 
-.espacio {
-  padding: 20px;
+.banner h2 {
+  padding: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #e59617;
 }
 
-p {
-  padding: 20px;
-  font-size: 20px;
-  color: #090601;
-  text-decoration: none;
-}
-
-.galeria {
-  width: 100%;
-  height: auto;
-  background-color: Orange;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 200px);
-  padding: 20px;
-  grid-gap: 15px;
-}
-
-h2 {
-  width: 100%;
-  height: 50px;
-  padding: 20px;
-  margin-top: 50px;
-  font-size: 18px;
+.banner p {
   color: #EDEDED;
-  align-items: center;
 }
 
-.item {
-  background-color: #333;
-  border: 3px solid #000;
-  background-size: cover;
-  background-position: center;
+.banner img {
+  width: 300px;
 }
 
-.item1 {
-  background-image: url(./MULTIMEDIA/HAMBURGUESAS/HAMBURGUESA\ 2.jpg);
-}
-
-.item2 {
-  background-image: url(./MULTIMEDIA/TAPAS/TAPAS\ 1.jpg);
-}
-
-/* Media query para tabletas */
-@media (min-width: 480px) {
-  body {
-    font-size: 18px;
-    padding: 20px;
-  }
-  .galeria {
-    grid-template-columns: 2fr;
-  }
-}
-/* Media query para computadoras de escritorio */
-@media (min-width: 1024px) {
-  body {
-    font-size: 20px;
-    padding: 30px;
-  }
-  .galeria {
-    grid-template-columns: 2fr;
-  }
+.btn-primary {
+  background-color: #f9cd86;
+  color: #090601;
+  font-weight: 500;
+  border: 2px solid #090601;
 }/*# sourceMappingURL=estilos.css.map */
