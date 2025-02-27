@@ -151,6 +151,11 @@ body {
   padding: 10px 0;
 }
 
+.card img {
+  width: 150px;
+  height: 150px;
+}
+
 .banner {
   padding: 80px 0;
   margin-bottom: 60px;
@@ -174,7 +179,7 @@ body {
 }
 
 .btn-primary {
-  background-color: #f9cd86;
+  background-color: #dea13f;
   color: #090601;
   font-weight: 500;
   border: 2px solid #090601;

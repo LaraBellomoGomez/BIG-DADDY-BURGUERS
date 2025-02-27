@@ -1,4 +1,4 @@
-$color1: #f9cd86;
+$color1: #dea13f;
 $color2: #090601;
 $color3: #EDEDED;
 $color4: #e59617;
@@ -187,8 +187,13 @@ body{
 // PRODUCTOS
 .product {
     padding: 10px 0;
-
 }
+
+.card img{
+    width: 150px;
+    height: 150px;
+}
+
 
 // BANNER
 .banner {
@@ -227,6 +232,9 @@ body{
 .form {
     background-color: $color3;
 }
+
+
+
 
 // MEDIA
 
