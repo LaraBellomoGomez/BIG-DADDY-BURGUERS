@@ -136,6 +136,14 @@ body {
   z-index: 1;
 }
 
+.subir {
+  font-size: 40px;
+  font-weight: 200;
+  padding-top: 20px;
+  color: #e59617;
+  float: right;
+}
+
 .box-icons i {
   font-size: 40px;
   padding-top: 20px;
