@@ -197,6 +197,11 @@ body {
   background-color: #EDEDED;
 }
 
+.container2 {
+  margin-left: 20px;
+  padding: 20px;
+}
+
 @media (max-width: 767px) {
   .carousel-item {
     min-height: 300px;
